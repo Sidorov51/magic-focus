@@ -24,7 +24,7 @@ set -a; . ./.env; set +a
 python -m bot.main
 ```
 
-Или через Docker:
+Или через Docker (подробнее для сервера: [DEPLOY.md](DEPLOY.md)):
 
 ```bash
 docker build -t magic-focus .

@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    container_name: magic-focus-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./files:/app/files:ro
+      - ./data:/app/data
